@@ -1,0 +1,239 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /workspace
+
+  # Export additional ENV variables
+  env:
+    recording: true
+
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 20
+
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+
+  # Quality
+  # 1 - 100
+  quality: 100
+
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: auto
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Nomius
+    style:
+      border: 0px black solid
+      boxShadow: none
+      margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "MesloLGS NF, Monaco, Lucida Console, Ubuntu Mono, Monospace"
+
+  # The size of the font
+  fontSize: 12
+
+  # The height of lines
+  lineHeight: 1
+
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+
+# Records, feel free to edit them
+records:
+  - delay: 0
+    content: "\e[?2004h\e[0;32mroot \e[0m➜ \e[1;34m/workspaces \e[0m$ "
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: o
+  - delay: 100
+    content: m
+  - delay: 100
+    content: i
+  - delay: 100
+    content: u
+  - delay: 100
+    content: s
+  - delay: 100
+    content: ' '
+  - delay: 600
+    content: b
+  - delay: 100
+    content: i
+  - delay: 100
+    content: o
+  - delay: 100
+    content: c
+  - delay: 100
+    content: h
+  - delay: 100
+    content: e
+  - delay: 100
+    content: m
+  - delay: 100
+    content: i
+  - delay: 100
+    content: a
+  - delay: 100
+    content: ' '
+  - delay: 300
+    content: b
+  - delay: 100
+    content: i
+  - delay: 100
+    content: o
+  - delay: 100
+    content: c
+  - delay: 100
+    content: h
+  - delay: 100
+    content: e
+  - delay: 100
+    content: m
+  - delay: 100
+    content: i
+  - delay: 100
+    content: o
+  - delay: 100
+    content: ' '
+  - delay: 300
+    content: b
+  - delay: 100
+    content: i
+  - delay: 100
+    content: o
+  - delay: 100
+    content: c
+  - delay: 100
+    content: h
+  - delay: 100
+    content: e
+  - delay: 100
+    content: m
+  - delay: 100
+    content: i
+  - delay: 100
+    content: u
+  - delay: 100
+    content: s
+  - delay: 100
+    content: "\r\n"
+  - delay: 590
+    content: "\e[1GProcessing biochemia...\r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s"
+  - delay: 72
+    content: "\e[1G.com  ❌                \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s"
+  - delay: 615
+    content: "\e[1G.org  ✅                \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s"
+  - delay: 688
+    content: "\e[1GGH  ❌                  \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s"
+  - delay: 314
+    content: "\e[1GDocker  ✅              \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s"
+  - delay: 484
+    content: "\e[1Gnpm  ✅                 \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s"
+  - delay: 449
+    content: "\e[1Gpip  ❌                 \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s"
+  - delay: 377
+    content: "\e[1Ggem  ✅                 \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s\e[1G                        \r\r\n\e[1G[   ] 0/3 ET: 0s ETA:--s\e[1G[=  ] 1/3 ET: 0s ETA: 0s\e[1GProcessing biochemio... \r\r\n\e[1G[=  ] 1/3 ET: 0s ETA: 0s"
+  - delay: 263
+    content: "\e[1G.com  ✅                \r\r\n\e[1G[=  ] 1/3 ET: 0s ETA: 0s"
+  - delay: 367
+    content: "\e[1G.org  ✅                \r\r\n\e[1G[=  ] 1/3 ET: 0s ETA: 1s"
+  - delay: 385
+    content: "\e[1GGH  ✅                  \r\r\n\e[1G[=  ] 1/3 ET: 1s ETA: 2s"
+  - delay: 497
+    content: "\e[1GDocker  ✅              \r\r\n\e[1G[=  ] 1/3 ET: 1s ETA: 3s"
+  - delay: 623
+    content: "\e[1Gnpm  ✅                 \r\r\n\e[1G[=  ] 1/3 ET: 2s ETA: 4s"
+  - delay: 417
+    content: "\e[1Gpip  ✅                 \r\r\n\e[1G[=  ] 1/3 ET: 2s ETA: 5s"
+  - delay: 159
+    content: "\e[1Ggem  ✅                 \r\r\n\e[1G[=  ] 1/3 ET: 2s ETA: 5s\e[1G                        \r\r\n\e[1G[=  ] 1/3 ET: 2s ETA: 5s\e[1G[== ] 2/3 ET: 2s ETA: 1s\e[1GProcessing biochemius...\r\r\n\e[1G[== ] 2/3 ET: 2s ETA: 1s"
+  - delay: 475
+    content: "\e[1G.com  ✅                \r\r\n\e[1G[== ] 2/3 ET: 3s ETA: 1s"
+  - delay: 362
+    content: "\e[1G.org  ✅                \r\r\n\e[1G[== ] 2/3 ET: 3s ETA: 1s"
+  - delay: 370
+    content: "\e[1GGH  ✅                  \r\r\n\e[1G[== ] 2/3 ET: 3s ETA: 1s"
+  - delay: 360
+    content: "\e[1GDocker  ✅              \r\r\n\e[1G[== ] 2/3 ET: 4s ETA: 2s"
+  - delay: 607
+    content: "\e[1Gnpm  ✅                 \r\r\n\e[1G[== ] 2/3 ET: 4s ETA: 2s"
+  - delay: 419
+    content: "\e[1Gpip  ✅                 \r\r\n\e[1G[== ] 2/3 ET: 5s ETA: 2s"
+  - delay: 350
+    content: "\e[1Ggem  ✅                 \r\r\n\e[1G[== ] 2/3 ET: 5s ETA: 2s\e[1G                        \r\r\n\e[1G[== ] 2/3 ET: 5s ETA: 2s\e[1G[===] 3/3 ET: 5s ETA: 0s\r\r\n"
+  - delay: 21
+    content: "┌────────────┬──────┬──────┬────┬────────┬─────┬─────┬─────┐\r\r\n│ Name       │ .com │ .org │ GH │ Docker │ npm │ pip │ gem │\r\r\n├────────────┼──────┼──────┼────┼────────┼─────┼─────┼─────┤\r\r\n│ biochemia  │  ❌   │  ✅   │ ❌  │   ✅    │ ✅   │ ❌   │ ✅   │\r\r\n│ biochemio  │  ✅   │  ✅   │ ✅  │   ✅    │ ✅   │ ✅   │ ✅   │\r\r\n│ biochemius │  ✅   │  ✅   │ ✅  │   ✅    │ ✅   │ ✅   │ ✅   │\r\r\n└────────────┴──────┴──────┴────┴────────┴─────┴─────┴─────┘\r\r\n"
+  - delay: 10000
+    content: " "
