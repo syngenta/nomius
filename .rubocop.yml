@@ -1,0 +1,27 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.6
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 120
+
+# Relax RSpec metrics
+RSpec/ExampleLength:
+  Max: 20 # Defaut is 5
+
+RSpec/MultipleExpectations:
+  Max: 3 # Defaut is 1
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10 # Defaut is 5

@@ -1,0 +1,32 @@
+Usage: nomius [OPTIONS] [NAMES...]
+
+Nomius — bulk domain & package name availability checker.
+
+Options:
+  -h, --help           Print usage
+  -i, --input string   Input file. Could be:
+                       - TXT with each name on a separate line;
+                       - CSV file with 2 columns: "name","comment" ("comment"
+                       is optional).
+
+  -o, --output string  Output CSV file
+  -s, --silent         Print less output
+      --version        Print version
+
+Examples:
+  Basic usage
+  Check "firstname" and "othername" names.
+    $ nomius firstname othername
+
+  Usage with a TXT file
+    $ nomius --input names.txt
+  or
+    $ cat names.txt | nomius
+  or
+    $ nomius < names.txt
+
+  Usage with a CSV file
+    $ nomius --input names.csv
+
+  Usage with a CSV file and output to a CSV file
+    $ nomius --input names.csv --output results.csv
