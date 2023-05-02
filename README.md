@@ -21,17 +21,7 @@
 
 The very basic usage example:
 
-```shell
-user@home:~$ nomius biochem biochemio biochemus
-
-┌───────────┬──────┬──────┬────┬────────┬─────┬─────┬─────┐
-│ Name      │ .com │ .org │ GH │ Docker │ npm │ pip │ gem │
-├───────────┼──────┼──────┼────┼────────┼─────┼─────┼─────┤
-│ biochem   │  ❌  │  ❌  │ ❌ │   ❌   │ ✅  │ ✅  │ ✅  │
-│ biochemio │  ✅  │  ✅  │ ✅ │   ✅   │ ✅  │ ✅  │ ✅  │
-│ biochemus │  ✅  │  ✅  │ ✅ │   ✅   │ ✅  │ ✅  │ ✅  │
-└───────────┴──────┴──────┴────┴────────┴─────┴─────┴─────┘
-```
+![Nomius demo](docs/demo/render.gif)
 
 - `nomius` is a console utility. Could be installed & used as:
   - [Ruby gem](#ruby-gem) (Ruby 2.6+);
