@@ -6,7 +6,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem "overcommit", "0.60.0"
+  gem "overcommit", "0.61.0"
   gem "rubocop", "1.50.2"
   gem "rubocop-rspec", "2.20.0"
 end
